@@ -1,0 +1,270 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Baloo 2',cursive;
+}
+
+body{
+background:linear-gradient(
+135deg,
+#fff9f5,
+#ffd6eb,
+#ffe066,
+#7ed6ff
+);
+
+overflow-x:hidden;
+color:#444;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:fixed;
+width:100%;
+z-index:999;
+background:rgba(255,255,255,0.5);
+backdrop-filter:blur(15px);
+}
+
+.logo{
+font-size:35px;
+font-weight:700;
+color:#ff4da6;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+font-size:20px;
+color:#ff4da6;
+transition:0.4s;
+}
+
+nav a:hover{
+color:#c77dff;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:100px;
+gap:60px;
+}
+
+.left{
+width:50%;
+}
+
+.title{
+font-size:80px;
+color:#ff4da6;
+line-height:1.2;
+}
+
+.marathi{
+font-size:55px;
+margin-top:20px;
+color:#c77dff;
+font-family:cursive;
+}
+
+p{
+font-size:24px;
+margin-top:20px;
+line-height:1.8;
+}
+
+button{
+margin-top:30px;
+padding:18px 45px;
+border:none;
+border-radius:50px;
+background:linear-gradient(
+45deg,
+#ff66b2,
+#c77dff
+);
+
+color:white;
+font-size:22px;
+cursor:pointer;
+transition:0.5s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 30px #ff66b2;
+}
+
+/* POSTER */
+
+.poster-box{
+width:420px;
+height:650px;
+border-radius:40px;
+overflow:hidden;
+background:white;
+padding:10px;
+
+box-shadow:
+0 20px 60px rgba(255,105,180,0.3);
+
+animation:float 5s infinite;
+}
+
+.poster-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:30px;
+}
+
+/* MEMORIES */
+
+.memory-preview{
+padding:100px 5%;
+text-align:center;
+}
+
+.memory-preview h1{
+font-size:60px;
+margin-bottom:50px;
+color:#ff4da6;
+}
+
+.memory-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.memory-grid img{
+width:300px;
+height:400px;
+object-fit:cover;
+border-radius:30px;
+transition:0.5s;
+}
+
+.memory-grid img:hover{
+transform:scale(1.05) rotate(2deg);
+}
+/* POPUP */
+
+.popup{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:9999;
+
+}
+
+.popup img{
+
+max-width:80%;
+max-height:80%;
+border-radius:30px;
+border:10px solid white;
+
+}
+
+/* MUSIC BUTTON */
+
+.music-button{
+
+position:fixed;
+bottom:20px;
+left:20px;
+
+padding:15px 25px;
+
+background:#ff66b2;
+
+border:none;
+border-radius:50px;
+
+font-size:18px;
+color:white;
+
+z-index:9999;
+
+cursor:pointer;
+
+box-shadow:0 10px 30px rgba(255,105,180,0.4);
+
+}
+.marathi{
+
+font-family:'Yatra One',cursive;
+
+font-size:58px;
+
+color:#ff4da6;
+
+line-height:1.6;
+
+text-shadow:
+0 0 10px rgba(255,105,180,0.5),
+0 0 20px rgba(255,182,193,0.4);
+
+animation:glow 3s infinite alternate;
+
+}
+@keyframes glow{
+
+from{
+
+text-shadow:
+0 0 10px #ff66b2,
+0 0 20px #ff99cc;
+
+}
+
+to{
+
+text-shadow:
+0 0 20px #ff66b2,
+0 0 40px #ff99cc,
+0 0 60px #ffd6eb;
+
+}
+
+}
+.marathi-small{
+
+font-family:'Yatra One',cursive;
+
+font-size:30px;
+
+color:#c77dff;
+
+margin-top:20px;
+
+line-height:1.8;
+
+}

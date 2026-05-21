@@ -1,0 +1,59 @@
+/* FLOATING */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* BALLOONS */
+
+.balloon{
+position:fixed;
+bottom:-120px;
+width:80px;
+height:100px;
+border-radius:50%;
+opacity:0.7;
+animation:balloon 12s linear infinite;
+z-index:-1;
+}
+
+.balloon1{
+left:10%;
+background:#ff66b2;
+}
+
+.balloon2{
+left:50%;
+background:#ffe066;
+animation-delay:4s;
+}
+
+.balloon3{
+left:80%;
+background:#7ed6ff;
+animation-delay:7s;
+}
+
+@keyframes balloon{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-120vh);
+}
+
+}
